@@ -13,13 +13,15 @@
 
 <body>
     <header>
-        <section class="container my-4">
-            <nav class="navbar bg-primary bg-opacity-10 rounded">
+        <section class="container mb-4">
+            <nav class="navbar rounded">
                 <div class="container-fluid">
-                    <a class="navbar-brand fs-1">Interactive</a>
+                    <!-- <a class="navbar-brand fs-1">Interactive</a> -->
+                    <h1 class="fs-3">Quiz <span class="text-success">HERO</span></h1>
                     <button onclick="history.back()" class="btn bg-primary text-light">Go Back</button>
                 </div>
             </nav>
+            <hr>
         </section>
     </header>
     <main>
@@ -29,17 +31,27 @@
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <strong>What is DOM and what is the purpose of DOM ?</strong>
+                            <strong>Difference between forEach , map , filter and find in JavaScript?</strong>
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            DOM (<strong>Document Object Model</strong>) is a programming interface for web documents.
-                            JavaScript does not understand HTML elements,
-                            which is where the DOM comes to the rescue and uses it to manipulate JavaScript
-                            HTML elements.Browsers use the DOM to display web pages, and the DOM can be
-                            accessed and manipulated by JavaScript.
+                            <strong>ForEach:</strong> ForEach is used to loop through an array and execute a function on
+                            each element in
+                            the array. It does not return a value. <br>
+
+                            <strong>Map:</strong> Map is used to loop through an array, modify each element in the
+                            array, and return a
+                            new array. <br>
+
+                            <strong>Filter:</strong> Filter is used to loop through an array and filter out elements
+                            based on a
+                            condition. It returns a new array with the elements that match the condition. <br>
+
+                            <strong>Find:</strong> Find is used to loop through an array and find the first element that
+                            matches the
+                            condition. It returns the value of the element that matches the condition. <br>
                         </div>
                     </div>
                 </div>
@@ -47,21 +59,26 @@
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <strong>How to select element from DOM ?</strong>
+                            <strong>Difference between local storage , session storage and cookies ?</strong>
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>There are 5 ways select elements in a DOM use selector.</strong>
-                            <ul>
-                                <li>getElementById()</li>
-                                <li>getElementsByClassName()</li>
-                                <li>querySelectorAll()</li>
-                                <li>getElementsByTagName()</li>
-                                <li>querySelectorAll()</li>
-                            </ul>
+                            <strong>Local Storage:</strong> Local Storage is a type of web storage that allows websites
+                            and web apps to
+                            store and access data in the browser. Local Storage data is stored in the browser until it
+                            is manually cleared. It is more secure than cookies . <br>
 
+                            <strong>Session Storage:</strong> Session Storage is similar to Local Storage, except that
+                            data stored in
+                            Session Storage is only available for the current page and browser session. The data stored
+                            in Session Storage is cleared when the browser tab or window is closed. <br>
+
+                            <strong>Cookies:</strong> Cookies are small text files that are stored on the user's
+                            computer by the web
+                            browser. They contain small pieces of data, such as site preferences, and are used to store
+                            information such as login details. <br>
                         </div>
                     </div>
                 </div>
@@ -69,17 +86,15 @@
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <strong>what is the event bubble ?</strong>
+                            <strong>What is event loop in javaScript and how it works ?</strong>
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            Event bubbling is a mechanism in JavaScript, where an event is
-                            triggered on a specific element and then propagates to its parent element
-                            and elements beyond. For example: When a button is clicked, the click event
-                            will be triggered first on the button, then on its parent element and on to its outer
-                            elements.
+                            The event loop is a process that allows JavaScript code to run asynchronously, meaning that
+                            it can run in the background while other code is executing. In this way, it helps to ensure
+                            that the program can respond to user events in a timely manner.
                         </div>
                     </div>
                 </div>
@@ -87,16 +102,32 @@
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            <strong>What is callback function and what is it`s use ?</strong>
+                            <strong>What is the work of the quizTimer() function ?</strong>
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            A callback function is a function that is passed as an argument to another function.
-                            It is used to run it later. Example : "function print(callback) {
-                            callback();
-                            }"
+                            The quizTimer() function is used to set a timer for a quiz, display the remaining time in
+                            minutes and seconds, and change the color of the timer to red when the time left is less
+                            than one minute. It also takes a dismiss parameter which can be used to stop the timer if
+                            needed.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <strong>What is the work of the chooseQuiz() function ?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The chooseQuiz() function is used to select a quiz from the quizData array, store the given
+                            <br>
+                            answer and display the answers.
                         </div>
                     </div>
                 </div>
