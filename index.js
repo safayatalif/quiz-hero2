@@ -180,7 +180,7 @@ document.querySelector("#submit").addEventListener("click", () => {
       }
   </div>
   `;
-
+  
     clearTimeout(x);
   }, 1500);
   window.scrollTo(0, 0);
